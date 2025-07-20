@@ -55,11 +55,11 @@ def load_data(directory):
 def main():
     if len(sys.argv) > 2:
         sys.exit("Usage: python degrees.py [directory]")
-    directory = sys.argv[1] if len(sys.argv) == 2 else "large"
+    directory = sys.argv[1] if len(sys.argv) == 2 else "small" #switch this back to large onc finished testing
 
     # Load data from files into memory
     print("Loading data...")
-    load_data(directory)
+    load_data("small")
     print("Data loaded.")
 
     source = person_id_for_name(input("Name: "))
@@ -92,7 +92,9 @@ def shortest_path(source, target):
     If no possible path, returns None.
     """
 
-    # TODO
+    
+    
+    
     raise NotImplementedError
 
 
